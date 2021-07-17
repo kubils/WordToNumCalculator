@@ -1,2 +1,2 @@
 ## WordToNumCalculator
-[](/img/imaC)
+![](/img/imaC.png)
