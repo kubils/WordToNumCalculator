@@ -11,7 +11,7 @@ import java.util.Locale;
 public class Activator implements BundleActivator {
 
 	private static BundleContext context;
-
+	private ServiceRegistration registration;
 
 	public void start(BundleContext bundleContext) throws Exception {
 
@@ -30,15 +30,18 @@ public class Activator implements BundleActivator {
 		
 		Converter converter = new ConverterImp();
 		
-		ServiceRegistration registration = context.registerService(Converter.class.getName(), 
+		registration = context.registerService(Converter.class.getName(), 
 				converter, new Hashtable<String, Object>());
 		
 		System.out.println("Service registered : Converter");
+		System.out.println(registration.toString());
 
 	}
 
 	public void stop(BundleContext bundleContext) throws Exception {
 		Activator.context = null;
+		registration.unregister();
+
 	}
 
 }
