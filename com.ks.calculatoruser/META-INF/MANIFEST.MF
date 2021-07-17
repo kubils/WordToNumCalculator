@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Calculatoruser
+Bundle-SymbolicName: com.ks.calculatoruser
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.ks.calculatoruser.Activator
+Bundle-Vendor: KS
+Bundle-RequiredExecutionEnvironment: JavaSE-12
+Import-Package: com.ks.converter,
+ org.osgi.framework;version="1.3.0"
+Automatic-Module-Name: com.ks.calculatoruser

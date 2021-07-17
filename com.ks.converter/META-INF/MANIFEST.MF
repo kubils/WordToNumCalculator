@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Converter
+Bundle-SymbolicName: com.ks.converter
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.ks.converter.Activator
+Bundle-Vendor: KS
+Bundle-RequiredExecutionEnvironment: JavaSE-12
+Import-Package: org.osgi.framework;version="1.3.0"
+Export-Package: com.ks.converter
+Automatic-Module-Name: com.ks.converter
